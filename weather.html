@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Weather Forecasting</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <h1 id="mainHeading">Weather Forecasting</h1> 
+    <div class="container" id="inputContainer">
+        <input type="text" id="city" placeholder="Enter City Name">
+        <button onclick="checkWeather()">open</button>
+    </div>
+
+    <div id="currentWeather"></div>
+
+    <div class="weather-result" id="weatherResult"></div>
+    <div id="nextFiveDaysButtonContainer" style="display: none;">
+        <button onclick="checkWeatherForNextFiveDays()">See Next Five Days Weather</button>
+    </div>
+    <div class="weather-result" id="nextFiveDaysWeatherResult"></div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
